@@ -1,0 +1,143 @@
+@mixin mediaBg() {
+	@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+		@content;
+	}
+}
+
+@mixin tablet() {
+	@media (max-width: 1220px) {
+		@content;
+	}
+}
+
+@mixin mobile() {
+	@media (max-width: 820px) {
+		@content;
+	}
+}
+
+$base-font-family: var(--font-family);
+
+// Навигация
+$nav-list-font-weight: 700;
+$nav-list-font-size: 20px;
+$nav-list-color: var(--dark-blue);
+
+// Заголовки
+$headingFirst-font-weight: 800;
+$headingFirst-font-size: 70px;
+$headingFirst-color: var(--dark-blue);
+
+$heading-second-font-weight: 800;
+$heading-second-font-size: 50px;
+$heading-second-color: var(--dark-blue);
+
+$heading-third-font-weight: 800;
+$heading-third-font-size: 40px;
+$heading-third-color: var(--dark-blue);
+
+$heading-fourth-font-weight: 800;
+$heading-fourth-font-size: 35px;
+$heading-fourth-color: var(--dark-blue);
+
+$heading-fifth-font-weight: 800;
+$heading-fifth-font-size: 30px;
+$heading-fifth-color: var(--dark-blue);
+
+$heading-sixth-font-weight: 800;
+$heading-sixth-font-size: 25px;
+$heading-sixth-color: var(--dark-blue);
+
+// Кнопки
+$button-border-radius: 16px;
+$button-padding: 28px 39px;
+$buttonDark-background: var(--dark-blue);
+$buttonWhite-background: #fff;
+$buttonYellow-background: var(--yellow);
+$button-border: 1px solid var(--dark-blue);
+
+$third-font-family: var(--third-family), sans-serif;
+$title-font-weight: 400;
+$title-font-size: 36px;
+$title-color: var(--green);
+
+@mixin title {
+	font-family: $third-font-family;
+	font-weight: $title-font-weight;
+	font-size: $title-font-size;
+	color: $title-color;
+}
+
+@mixin heading-first-style {
+	font-family: $base-font-family;
+	font-weight: $headingFirst-font-weight;
+	font-size: $headingFirst-font-size;
+	color: $headingFirst-color;
+}
+
+
+@mixin heading-second-style {
+	font-family: $base-font-family;
+	font-weight: $heading-second-font-weight;
+	font-size: $heading-second-font-size;
+	color: $heading-second-color;
+}
+
+
+@mixin heading-third-style {
+	font-family: $base-font-family;
+	font-weight: $heading-third-font-weight;
+	font-size: $heading-third-font-size;
+	color: $heading-third-color;
+}
+
+
+@mixin heading-fourth-style {
+	font-family: $base-font-family;
+	font-weight: $heading-fourth-font-weight;
+	font-size: $heading-fourth-font-size;
+	color: $heading-fourth-color;
+}
+
+
+@mixin heading-fifth-style {
+	font-family: $base-font-family;
+	font-weight: $heading-fifth-font-weight;
+	font-size: $heading-fifth-font-size;
+	color: $heading-fifth-color;
+}
+
+
+@mixin heading-sixth-style {
+	font-family: $base-font-family;
+	font-weight: $heading-sixth-font-weight;
+	font-size: $heading-sixth-font-size;
+	color: $heading-sixth-color;
+}
+
+@mixin dark-button-style {
+	border-radius: $button-border-radius;
+	padding: $button-padding;
+	background: $buttonDark-background;
+}
+
+@mixin yellow-button-style {
+	border-radius: $button-border-radius;
+	padding: $button-padding;
+	background: $buttonYellow-background;
+}
+
+
+@mixin white-button-style {
+	border: $button-border;
+	border-radius: $button-border-radius;
+	padding: $button-padding;
+	background: $buttonWhite-background;
+}
+
+@mixin nav-list-style {
+	font-family: $base-font-family;
+	font-weight: $nav-list-font-weight;
+	font-size: $nav-list-font-size;
+	color: $nav-list-color;
+}

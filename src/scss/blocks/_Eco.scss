@@ -1,0 +1,42 @@
+@use '../base/mixins';
+
+
+.Eco {
+	margin-bottom: 180px;
+&__content{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 60px
+}
+
+	
+	&__sub__title {
+		font-family: var(--third-family), sans-serif;
+		font-weight: 400;
+		font-size: 36px;
+		color: var(--green);
+		margin-bottom: 8px;
+	}
+	
+	&__title {
+		@include mixins.heading-second-style;
+		margin-bottom: 35px;
+	}
+	&__up {
+		font-family: var(--font-family),sans-serif;
+		font-weight: 500;
+		font-size: 25px;
+		color: var(--dark-blue);
+		margin-bottom: 7px;
+	}
+	
+	&__down {
+		font-family: var(--second-family),sans-serif;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 165%;
+		color: var(--dark-gray);
+		margin-bottom: 35px;
+	}
+}

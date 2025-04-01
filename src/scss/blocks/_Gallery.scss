@@ -1,0 +1,43 @@
+.Gallery {
+	margin-bottom: 187px;
+	&__content {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 40px
+	}
+	&__card {
+		padding: 200px 103px;
+		width: 100%;
+	}
+	
+	&__card:first-child {
+		background-size: cover;
+		background: url("../../img/Gallery/GalleryFirstCard.svg") no-repeat;
+		
+	}
+	
+	&__card:nth-child(2) {
+		background-size: cover;
+		background: url("../../img/Gallery/GallerySecondCard.svg") no-repeat;
+	
+	}
+	
+	&__card:nth-child(3) {
+		background-size: cover;
+		background: url("../../img/Gallery/GalleryThirdCard.svg") no-repeat;
+		
+	}
+	
+	&__title {
+		border-radius: 15px;
+		padding: 30px 40px;
+		text-align: center;
+		font-family: var(--font-family), sans-serif;
+		font-weight: 500;
+		font-size: 25px;
+		color: var(--dark-blue);
+		background: var(--white);
+		
+	}
+}

@@ -1,0 +1,100 @@
+@use '../base/mixins';
+
+
+.Offer {
+	padding: 200px 260px;
+	background: var(--dark-blue);
+	
+	&__up {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 50px;
+		
+	}
+	
+	&__title {
+		font-family: var(--third-family), sans-serif;
+		font-weight: 400;
+		font-size: 36px;
+		color: var(--green);
+	}
+	
+	&__sub__title {
+		font-family: var(--font-family), sans-serif;
+		font-weight: 800;
+		font-size: 50px;
+		color: var(--white);
+	}
+	
+	&__blocks {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 20px;
+		
+	}
+	
+	&__card {
+		background: var(--white);
+		padding: 29px 25px 17px 25px;
+		display: flex;
+		border-radius: 30px;
+		flex-direction: column;
+		
+		
+	}
+	
+	&__card img {
+		max-width: 270px;
+	}
+	
+	&__button {
+		
+		@include mixins.yellow-button-style;
+		font-family: var(--font-family), sans-serif;
+		font-weight: 700;
+		font-size: 20px;
+		color: var(--dark-blue);
+		display: flex;
+		align-items: center;
+		gap: 10px
+	}
+	
+	&__tag {
+		border-radius: 8px;
+		padding: 6px 12px;
+		background: var(--dark-blue);
+		font-family: var(--second-family), serif;
+		font-weight: 600;
+		font-size: 15px;
+		max-width: 100px;
+		text-align: center;
+		color: var(--white);
+		margin-bottom: 13px;
+	}
+	
+	&__product__name {
+		font-family: var(--font-family), serif;
+		font-weight: 600;
+		font-size: 20px;
+		margin-bottom: 13px;
+		color: #274c5b;
+	}
+	
+	&__value {
+		font-family: var(--second-family), serif;
+		font-weight: 700;
+		font-size: 18px;
+		text-align: center;
+		color: var(--dark-blue);
+	}
+	
+	&__price {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	
+	
+}

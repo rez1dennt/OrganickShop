@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Organick</title>
+		<link rel="stylesheet" href="./css/main.css" />
+
+		<link rel="icon" type="image/x-icon" href="./img/header/Logo.svg" />
+		<link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png" />
+	</head>
+
+	<body>
+		<header class="header">
+			<div class="container">
+				<div class="header__row">
+					<div class="logo">
+						<img src="./img/header/Logo.svg" alt="Logo" />
+					</div>
+					<ul class="header__nav__list">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<div class="dropdown">
+							<li>
+								<a href="#!">Pages </a>
+								<svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M0.791016 1.5L3.79102 4.5L6.79102 1.5" stroke="#274C5B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+							</li>
+							<ul class="menu dropdown-content">
+								<li><a href="#">Диваны</a></li>
+								<li><a href="#">Кресла</a></li>
+								<li><a href="#">Стулья</a></li>
+								<li><a href="#">Кровати</a></li>
+								<li><a href="#">Матрацы</a></li>
+							</ul>
+						</div>
+						<li><a href="#">Shop</a></li>
+						<li><a href="#">Projects</a></li>
+						<li><a href="#">News</a></li>
+					</ul>
+					<div class="header__nav__list__right">
+						<svg width="57" height="56" viewBox="0 0 57 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<circle cx="28.791" cy="28" r="28" fill="#7EB693" />
+							<path
+								d="M40.4692 35.8921L35.7086 31.1315C36.8547 29.6057 37.4734 27.7485 37.4713 25.8402C37.4713 20.9657 33.5056 17 28.6312 17C23.7567 17 19.791 20.9657 19.791 25.8402C19.791 30.7146 23.7567 34.6803 28.6312 34.6803C30.5395 34.6824 32.3967 34.0637 33.9225 32.9175L38.6831 37.6781C38.9241 37.8936 39.2384 38.0085 39.5615 37.9995C39.8846 37.9905 40.192 37.8581 40.4205 37.6295C40.6491 37.401 40.7815 37.0936 40.7905 36.7705C40.7996 36.4474 40.6846 36.1331 40.4692 35.8921ZM22.3168 25.8402C22.3168 24.5913 22.6871 23.3705 23.3809 22.3321C24.0748 21.2937 25.061 20.4843 26.2148 20.0064C27.3686 19.5285 28.6382 19.4034 29.8631 19.6471C31.0879 19.8907 32.213 20.4921 33.0961 21.3752C33.9792 22.2583 34.5806 23.3834 34.8242 24.6083C35.0679 25.8332 34.9428 27.1028 34.4649 28.2566C33.987 29.4104 33.1777 30.3966 32.1393 31.0904C31.1009 31.7842 29.88 32.1546 28.6312 32.1546C26.9571 32.1526 25.3522 31.4866 24.1684 30.3029C22.9847 29.1192 22.3188 27.5142 22.3168 25.8402Z"
+								fill="#FAFAFA"
+							/>
+						</svg>
+						<svg width="57" height="56" viewBox="0 0 57 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<circle cx="28.791" cy="28" r="28" fill="#274C5B" />
+							<path
+								d="M25.5689 39.0001C26.2439 39.0001 26.7911 38.4529 26.7911 37.7779C26.7911 37.1029 26.2439 36.5557 25.5689 36.5557C24.8939 36.5557 24.3467 37.1029 24.3467 37.7779C24.3467 38.4529 24.8939 39.0001 25.5689 39.0001Z"
+								fill="white"
+								stroke="white"
+								stroke-width="1.5"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							/>
+							<path
+								d="M34.1246 39.0001C34.7996 39.0001 35.3468 38.4529 35.3468 37.7779C35.3468 37.1029 34.7996 36.5557 34.1246 36.5557C33.4496 36.5557 32.9023 37.1029 32.9023 37.7779C32.9023 38.4529 33.4496 39.0001 34.1246 39.0001Z"
+								fill="white"
+								stroke="white"
+								stroke-width="1.5"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							/>
+							<path d="M15.791 17H19.5729L22.4093 33.0731H37.5369" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+							<path
+								d="M21.9022 29.1837L37.1494 29.2907C37.2587 29.2908 37.3647 29.2529 37.4493 29.1837C37.5339 29.1144 37.5918 29.0179 37.6133 28.9107L39.3151 20.4014C39.3289 20.3328 39.3272 20.262 39.3102 20.1941C39.2933 20.1262 39.2615 20.063 39.2171 20.0089C39.1727 19.9548 39.1169 19.9112 39.0536 19.8813C38.9903 19.8514 38.9212 19.8359 38.8513 19.8359L20.3584 19.8359"
+								stroke="white"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							/>
+						</svg>
+						<h1 class="header__cart">Cart (0)</h1>
+					</div>
+					<button class="mobile-nav-btn">
+						<div class="nav-icon"></div>
+					</button>
+				</div>
+			</div>
+		</header>
+		<div class="mobile-nav">
+			<ul class="mobile-nav__list">
+				<li><a href="#" class="active">Home</a></li>
+				<li><a href="#!">About</a></li>
+				<div class="dropdown">
+					<li class="dropbtn"><a href="#!">Pages</a></li>
+					<ul class="menu dropdown-content">
+						<li><a href="#">Диваны</a></li>
+						<li><a href="#">Кресла</a></li>
+						<li><a href="#">Стулья</a></li>
+						<li><a href="#">Кровати</a></li>
+						<li><a href="#">Матрацы</a></li>
+					</ul>
+				</div>
+				<li><a href="#!">Shop</a></li>
+				<li><a href="#!">Projects</a></li>
+				<li><a href="#!">News</a></li>
+			</ul>
+		</div>
+
+		<section class="hero">
+			<div class="container">
+				<div class="hero__content">
+					<div class="hero__left">
+						<p class="hero__subtitle title">100% Natural Food</p>
+						<h1 class="hero__title">
+							Choose the best <br />
+							healthier way <br />
+							of&#160;life
+						</h1>
+						<button class="hero__button">
+							Explore Now
+							<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<circle cx="9.5" cy="9.5" r="9.5" fill="#335B6B" />
+								<path d="M9.47641 6.12891L12.871 9.19342L9.47641 12.2579M12.3995 9.19342H5.51611" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+							</svg>
+						</button>
+					</div>
+
+					<div class="hero__right">
+						<picture>
+							<source srcset="./img/hero/heroRight.webp 1x, ./img/hero/heroRight@2x.webp 2x" type="image/webp" />
+							<source srcset="./img/hero/heroRight.jpg 1x, ./img/hero/heroRight@2x.jpg 2x" type="image/jpeg" />
+							<img src="./img/hero/heroRight.jpg" alt="" />
+						</picture>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="card">
+			<div class="container">
+				<div class="card__content">
+					<div class="card__left">
+						<img src="./img/card/firstcard.svg" alt="" />
+					</div>
+					<div class="card__right">
+						<img src="./img/card/secondcard.svg" alt="" />
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="About">
+			<div class="container">
+				<div class="About__content">
+					<div class="About__left">
+						<a href="#">
+							<img src="./img/About/aboutleft.svg" alt="aboutleftimg" />
+						</a>
+					</div>
+					<div class="About__right">
+						<p class="About__title_up title">About Us</p>
+						<h1 class="About__title">
+							We&#160;Believe in&#160;Working <br />
+							Accredited Farmers
+						</h1>
+						<p class="About__sub__title">
+							Simply dummy text of&#160;the printing and typesetting industry. Lorem had ceased to been the industry&#8217;s standard dummy text ever since the 1500s,
+							when an&#160;unknown printer took a&#160;galley.
+						</p>
+
+						<div class="About__blocks">
+							<div class="About__block__inside">
+								<div class="About__block__left">
+									<img src="./img/About/IconFirst.svg" alt="Icon" />
+								</div>
+								<div class="About__block__right">
+									<h1 class="About__block__title">
+										Organic Foods Only
+									</h1>
+									<p class="About__block__sub-title">
+										Simply dummy text of&#160;the printing and typesetting <br />
+										industry. Lorem Ipsum
+									</p>
+								</div>
+							</div>
+
+							<div class="About__block__inside">
+								<div class="About__block__left">
+									<img src="./img/About/IconSecond.svg" alt="Icon" />
+								</div>
+								<div class="About__block__right">
+									<h1 class="About__block__title">
+										Quality Standards
+									</h1>
+									<p class="About__block__sub-title">
+										Simply dummy text of&#160;the printing and typesetting <br />
+										industry. Lorem Ipsum
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<button class="About__button">
+							Shop Now
+							<svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<circle cx="10" cy="9.5" r="9.5" fill="#335B6B" />
+								<path d="M9.97641 6.12891L13.371 9.19342L9.97641 12.2579M12.8995 9.19342H6.01611" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="Categories">
+			<div class="container">
+				<div class="Categories__content">
+					<div class="Categories__text">
+						<p class="Categories__sub__title title">Categories</p>
+						<h1 class="Categories__title">Our Products</h1>
+					</div>
+					<div class="Categories__blocks">
+						<div class="Categories__card">
+							<div class="Categories__tag">
+								Vegetable
+							</div>
+							<img src="./img/Categories/Broccoli.svg" alt="" />
+							<div class="Categories__product__name">
+								Calabrese Broccoli
+							</div>
+							<div class="Categories__price">
+								<h1 class="Categories__value">$13.00</h1>
+								<img src="./img/Categories/Star.svg" alt="" />
+							</div>
+						</div>
+
+						<div class="Categories__card">
+							<div class="Categories__tag">
+								Fresh
+							</div>
+							<img src="./img/Categories/Banana.svg" alt="" />
+							<div class="Categories__product__name">
+								Fresh Banana Fruites
+							</div>
+							<div class="Categories__price">
+								<h1 class="Categories__value">$14.00</h1>
+								<img src="./img/Categories/Star.svg" alt="" />
+							</div>
+						</div>
+
+						<div class="Categories__card">
+							<div class="Categories__tag">
+								Millets
+							</div>
+							<img src="./img/Categories/Nuts.svg" alt="" />
+							<div class="Categories__product__name">
+								White Nuts
+							</div>
+							<div class="Categories__price">
+								<h1 class="Categories__value">$15.00</h1>
+								<img src="./img/Categories/Star.svg" alt="" />
+							</div>
+						</div>
+
+						<div class="Categories__card">
+							<div class="Categories__tag">
+								Vegetable
+							</div>
+							<img src="./img/Categories/Tomato.svg" alt="" />
+							<div class="Categories__product__name">
+								Vegan Red Tomato
+							</div>
+							<div class="Categories__price">
+								<h1 class="Categories__value">$17.00</h1>
+								<img src="./img/Categories/Star.svg" alt="" />
+							</div>
+						</div>
+
+						<div class="Categories__card">
+							<div class="Categories__tag">
+								Health
+							</div>
+							<img src="./img/Categories/Bean.svg" alt="" />
+							<div class="Categories__product__name">
+								Mung Bean
+							</div>
+							<div class="Categories__price">
+								<h1 class="Categories__value">$11.00</h1>
+								<img src="./img/Categories/Star.svg" alt="" />
+							</div>
+						</div>
+
+						<div class="Categories__card">
+							<div class="Categories__tag">
+								Nuts
+							</div>
+							<img src="./img/Categories/HazeInut.svg" alt="" />
+							<div class="Categories__product__name">
+								Brown Hazelnut
+							</div>
+							<div class="Categories__price">
+								<h1 class="Categories__value">$12.00</h1>
+								<img src="./img/Categories/Star.svg" alt="" />
+							</div>
+						</div>
+
+						<div class="Categories__card">
+							<div class="Categories__tag">
+								Fresh
+							</div>
+							<img src="./img/Categories/Eggs.svg" alt="" />
+							<div class="Categories__product__name">
+								Eggs
+							</div>
+							<div class="Categories__price">
+								<h1 class="Categories__value">$17.00</h1>
+								<img src="./img/Categories/Star.svg" alt="" />
+							</div>
+						</div>
+
+						<div class="Categories__card">
+							<div class="Categories__tag">
+								Fresh
+							</div>
+							<img src="./img/Categories/Bread.svg" alt="" />
+							<div class="Categories__product__name">
+								Zelco Suji Elaichi Rusk
+							</div>
+							<div class="Categories__price">
+								<h1 class="Categories__value">$15.00</h1>
+								<img src="./img/Categories/Star.svg" alt="" />
+							</div>
+						</div>
+					</div>
+					<button class="Categories__button">
+						Load More
+						<svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<circle cx="9.68066" cy="9.5" r="9.5" fill="#335B6B" />
+							<path d="M9.65708 6.12891L13.0516 9.19342L9.65708 12.2579M12.5802 9.19342H5.69678" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+						</svg>
+					</button>
+				</div>
+			</div>
+		</section>
+		<section class="Testimonial">
+			<div class="container">
+				<div class="Testimonial__content">
+					<div class="Testimonial__text">
+						<h1 class="Testimonial__title">
+							Testimonial
+						</h1>
+						<p class="Testimonial__sub__title">
+							What Our Customer Saying?
+						</p>
+					</div>
+					<img class="Testimonial__human" src="./img/Testimonial/Image.svg" alt="" />
+					<img class="Testimonial.human__stars" src="./img/Categories/Star.svg" alt="" />
+					<p class="Testimonial__human__sub__title">
+						Simply dummy text of&#160;the printing and typesetting industry. Lorem Ipsum simply dummy <br />
+						text of&#160;the printing and typesetting industry. Lorem Ipsum has been.
+					</p>
+					<h1 class="Testimonial__human__name">
+						Sara Taylor
+					</h1>
+					<p class="Testimonial__human__work">
+						Consumer
+					</p>
+
+					<div class="Testimonial__blocks">
+						<div class="Testimonial__counters">
+							<h1>100%</h1>
+							<p>Organic</p>
+						</div>
+						<div class="Testimonial__counters">
+							<h1>100%</h1>
+							<p>Organic</p>
+						</div>
+						<div class="Testimonial__counters">
+							<h1>100%</h1>
+							<p>Organic</p>
+						</div>
+						<div class="Testimonial__counters">
+							<h1>100%</h1>
+							<p>Organic</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="Offer">
+			<div class="container">
+				<div class="Offer__content">
+					<div class="Offer__up">
+						<div class="Offer__text">
+							<h1 class="Offer__title title">
+								Offer
+							</h1>
+							<p class="Offer__sub__title">
+								We&#160;Offer Organic For You
+							</p>
+						</div>
+
+						<button class="Offer__button">
+							View All Product
+							<svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<circle cx="9.68066" cy="9.5" r="9.5" fill="#335B6B" />
+								<path d="M9.65708 6.12891L13.0516 9.19342L9.65708 12.2579M12.5802 9.19342H5.69678" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+							</svg>
+						</button>
+					</div>
+					<div class="Offer__blocks">
+						<div class="Offer__card">
+							<div class="Offer__tag">
+								Vegetable
+							</div>
+							<img src="./img/Offer/MungBean.svg" alt="" />
+							<div class="Offer__product__name">
+								Mung Bean
+							</div>
+							<div class="Offer__price">
+								<h1 class="Offer__value">$11.00</h1>
+								<img src="./img/Categories/Star.svg" alt="" />
+							</div>
+						</div>
+						<div class="Offer__card">
+							<div class="Offer__tag">
+								Vegetable
+							</div>
+							<img src="./img/Offer/HazeLnut.svg" alt="" />
+							<div class="Offer__product__name">
+								Brown Hazelnut
+							</div>
+							<div class="Offer__price">
+								<h1 class="Offer__value">$12.00</h1>
+								<img src="./img/Categories/Star.svg" alt="" />
+							</div>
+						</div>
+						<div class="Offer__card">
+							<div class="Offer__tag">
+								Vegetable
+							</div>
+							<img src="./img/Offer/Onion.svg" alt="" />
+							<div class="Offer__product__name">
+								Onion
+							</div>
+							<div class="Offer__price">
+								<h1 class="Offer__value">$17.00</h1>
+								<img src="./img/Categories/Star.svg" alt="" />
+							</div>
+						</div>
+
+						<div class="Offer__card">
+							<div class="Offer__tag">
+								Vegetable
+							</div>
+							<img src="./img/Offer/Cabbage.svg" alt="" />
+							<div class="Offer__product__name">
+								Cabbage
+							</div>
+							<div class="Offer__price">
+								<h1 class="Offer__value">$17.00</h1>
+								<img src="./img/Categories/Star.svg" alt="" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="Eco">
+			<div class="Eco__content">
+				<div class="Eco__left">
+					<img src="./img/Eco/Eco%20Friendly.svg" alt="" />
+				</div>
+				<div class="Eco__right">
+					<p class="Eco__sub__title">Eco Friendly</p>
+					<h1 class="Eco__title">Econic is&#160;a&#160;Friendly <br />Organic Store</h1>
+					<div class="Eco__text">
+						<div class="Eco__block">
+							<h1 class="Eco__up">Start with Our Company First</h1>
+							<p class="Eco__down">Sed ut&#160;perspiciatis unde omnis iste natus error sit voluptat accusantium doloremque laudantium. Sed ut&#160;perspiciatis.</p>
+						</div>
+						<div class="Eco__block">
+							<h1 class="Eco__up">Learn How to&#160;Grow Yourself</h1>
+							<p class="Eco__down">Sed ut&#160;perspiciatis unde omnis iste natus error sit voluptat accusantium doloremque laudantium. Sed ut&#160;perspiciatis.</p>
+						</div>
+						<div class="Eco__block">
+							<h1 class="Eco__up">Farming Strategies of&#160;Today</h1>
+							<p class="Eco__down">Sed ut&#160;perspiciatis unde omnis iste natus error sit voluptat accusantium doloremque laudantium. Sed ut&#160;perspiciatis.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="Gallery">
+			<div class="container">
+				<div class="Gallery__content">
+					<div class="Gallery__card">
+						<h1 class="Gallery__title">
+							Organic Juice
+						</h1>
+					</div>
+					<div class="Gallery__card">
+						<h1 class="Gallery__title">
+							Organic Juice
+						</h1>
+					</div>
+					<div class="Gallery__card">
+						<h1 class="Gallery__title">
+							Organic Juice
+						</h1>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="News">
+			<div class="container">
+				<div class="News__content">
+					<div class="News__up">
+						<div class="News__text">
+							<h1 class="News__title title">
+								News
+							</h1>
+							<p class="News__sub__title">
+								Discover weekly content about <br />
+								organic food, & more
+							</p>
+						</div>
+						<button class="News__button">
+							More News
+							<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<circle cx="9.5" cy="9.5" r="9.5" fill="#335B6B" />
+								<path d="M9.47641 6.12891L12.871 9.19342L9.47641 12.2579M12.3995 9.19342H5.51611" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+							</svg>
+						</button>
+					</div>
+					<div class="News__blocks">
+						<div class="News__block">
+							<h1 class="News__date">25 <span>Nov</span></h1>
+							<div class="News__block__text">
+								<div class="News__admin">
+									<svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M12.3161 1.45446C11.4741 0.516515 10.298 0 9 0C7.69504 0 6.51512 0.51339 5.67701 1.44553C4.82983 2.38793 4.41705 3.66873 4.51397 5.05176C4.70608 7.78031 6.71848 9.99994 9 9.99994C11.2815 9.99994 13.2905 7.78076 13.4856 5.05265C13.5838 3.68212 13.1684 2.404 12.3161 1.45446ZM16.6152 19.9999H1.38482C1.18547 20.0026 0.988051 19.9594 0.806921 19.8734C0.625791 19.7874 0.46551 19.6609 0.337738 19.503C0.0564959 19.1561 -0.0568664 18.6825 0.0270736 18.2035C0.392256 16.1133 1.53194 14.3575 3.32323 13.1249C4.91463 12.0307 6.93049 11.4285 9 11.4285C11.0695 11.4285 13.0854 12.0312 14.6768 13.1249C16.4681 14.3571 17.6077 16.1129 17.9729 18.203C18.0569 18.682 17.9435 19.1557 17.6623 19.5026C17.5345 19.6606 17.3743 19.7872 17.1931 19.8732C17.012 19.9592 16.8146 20.0025 16.6152 19.9999Z"
+											fill="#EFD372"
+										/>
+									</svg>
+									<p class="News__Rachi">By&#160;Rachi Card</p>
+								</div>
+								<h1 class="News__block__title">
+									The Benefits of&#160;Vitamin D&#160;& How to&#160;Get It
+								</h1>
+								<p class="News__block__sub__title">
+									Simply dummy text of&#160;the printing and typesetting industry. Lorem Ipsum
+								</p>
+
+								<button class="News__block__button">
+									Read More
+									<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<circle cx="9.5" cy="9.5" r="9.5" fill="#335B6B" />
+										<path
+											d="M9.47641 6.12891L12.871 9.19342L9.47641 12.2579M12.3995 9.19342H5.51611"
+											stroke="white"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+									</svg>
+								</button>
+							</div>
+						</div>
+						<div class="News__block">
+							<h1 class="News__date">25 <span>Nov</span></h1>
+							<div class="News__block__text">
+								<div class="News__admin">
+									<svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M12.3161 1.45446C11.4741 0.516515 10.298 0 9 0C7.69504 0 6.51512 0.51339 5.67701 1.44553C4.82983 2.38793 4.41705 3.66873 4.51397 5.05176C4.70608 7.78031 6.71848 9.99994 9 9.99994C11.2815 9.99994 13.2905 7.78076 13.4856 5.05265C13.5838 3.68212 13.1684 2.404 12.3161 1.45446ZM16.6152 19.9999H1.38482C1.18547 20.0026 0.988051 19.9594 0.806921 19.8734C0.625791 19.7874 0.46551 19.6609 0.337738 19.503C0.0564959 19.1561 -0.0568664 18.6825 0.0270736 18.2035C0.392256 16.1133 1.53194 14.3575 3.32323 13.1249C4.91463 12.0307 6.93049 11.4285 9 11.4285C11.0695 11.4285 13.0854 12.0312 14.6768 13.1249C16.4681 14.3571 17.6077 16.1129 17.9729 18.203C18.0569 18.682 17.9435 19.1557 17.6623 19.5026C17.5345 19.6606 17.3743 19.7872 17.1931 19.8732C17.012 19.9592 16.8146 20.0025 16.6152 19.9999Z"
+											fill="#EFD372"
+										/>
+									</svg>
+									<p class="News__Rachi">By&#160;Rachi Card</p>
+								</div>
+								<h1 class="News__block__title">
+									The Benefits of&#160;Vitamin D&#160;& How to&#160;Get It
+								</h1>
+								<p class="News__block__sub__title">
+									Simply dummy text of&#160;the printing and typesetting industry. Lorem Ipsum
+								</p>
+								<button class="News__block__button">
+									Read More
+									<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<circle cx="9.5" cy="9.5" r="9.5" fill="#335B6B" />
+										<path
+											d="M9.47641 6.12891L12.871 9.19342L9.47641 12.2579M12.3995 9.19342H5.51611"
+											stroke="white"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__copyright">
+					<p>Сборка сделана в&#160;школе <a href="https://webcademy.ru" target="_blank">webcademy.ru</a></p>
+				</div>
+			</div>
+		</footer>
+
+		<script src="./js/index.bundle.js"></script>
+	</body>
+</html>

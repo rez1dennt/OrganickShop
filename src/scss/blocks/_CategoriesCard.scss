@@ -1,0 +1,54 @@
+.Categories {
+	
+	
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 20px;
+	
+	&__card {
+		max-width: 23%;
+		height: 483px;
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
+	}
+	
+	
+	&__tag {
+		border-radius: 8px;
+		padding: 6px 12px;
+		background: var(--dark-blue);
+		font-family: var(--second-family), serif;
+		font-weight: 600;
+		font-size: 15px;
+		max-width: 100px;
+		text-align: center;
+		color: var(--white);
+		margin-bottom: 13px;
+	}
+	&__product__name {
+		font-family: var(--font-family), serif;
+		font-weight: 600;
+		font-size: 20px;
+		margin-bottom: 13px;
+		color: #274c5b;
+	}
+	
+	&__value {
+		font-family: var(--second-family), serif;
+		font-weight: 700;
+		font-size: 18px;
+		text-align: center;
+		color: var(--dark-blue);
+	}
+	
+	&__price {
+		display: flex;
+		align-items: center;
+		gap: 51px;
+	}
+	
+	
+}
+

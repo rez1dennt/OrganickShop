@@ -1,0 +1,40 @@
+@use '../base/mixins';
+
+.hero {
+	margin-bottom: 154px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 85vh;
+	background-image: url('../../img/hero/Background.svg');
+	background-size: cover;
+	background-position: center;
+
+	&__subtitle {
+		font-family: var(--third-family), serif;
+		font-weight: 400;
+		font-size: 36px;
+		color: var(--green-text);
+		margin-bottom: 10px;
+	}
+	&__title {
+		@include mixins.heading-first-style;
+		margin-bottom: 23px;
+	}
+	
+	&__button {
+		@include mixins.yellow-button-style;
+		@include mixins.nav-list-style;
+		display: flex;
+		align-items: center;
+		gap: 5px
+	}
+	&__content {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+&__right img {
+	max-width: 800px;
+}
+}
